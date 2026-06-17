@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dietas Mixtecas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a href="#inicio" class="brand">
+        <div class="logo-box" aria-label="Logotipo reemplazable">
+          <img src="https://via.placeholder.com/180x180.png?text=LOGO" alt="Logotipo de Dietas Mixtecas" class="logo-img">
+        </div>
+        <div>
+          <h1>Dietas Mixtecas</h1>
+        </div>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
+
+      <nav class="menu" id="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#nutricion">Información Nutricional</a>
+        <a href="#dietas">Recomendaciones de Dietas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="hero-kicker">Nutrición con identidad y bienestar</p>
+        <h2>Nutrición saludable con raíces mixtecas</h2>
+        <p class="hero-text">Dietas equilibradas que honran tu origen y fortalecen tu bienestar.</p>
+        <a href="#nutricion" class="btn">Comienza tu cambio hoy</a>
+      </div>
+    </section>
+
+    <section id="nutricion" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Información Nutricional</h2>
+          <p>Consulta alimentos tradicionales y filtra por tipo de nutriente.</p>
+        </div>
+
+        <div class="nutrition-layout">
+          <div class="card">
+            <div class="filter-row">
+              <label for="filtroNutriente">Filtrar por nutriente:</label>
+              <select id="filtroNutriente">
+                <option value="todos">Todos</option>
+                <option value="proteinas">Proteínas</option>
+                <option value="vitaminas">Vitaminas</option>
+                <option value="fibra">Fibra</option>
+                <option value="minerales">Minerales</option>
+                <option value="energia">Energía</option>
+              </select>
+            </div>
+
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Alimento</th>
+                    <th>Nutrientes destacados</th>
+                    <th>Beneficios</th>
+                  </tr>
+                </thead>
+                <tbody id="tablaNutricion">
+                  <tr data-nutriente="energia fibra minerales">
+                    <td>Maíz</td>
+                    <td>Energía, fibra, minerales</td>
+                    <td>Base tradicional de la dieta; aporta saciedad y energía sostenida.</td>
+                  </tr>
+                  <tr data-nutriente="vitaminas fibra minerales">
+                    <td>Quelites</td>
+                    <td>Vitaminas, fibra, minerales</td>
+                    <td>Complementan la dieta con micronutrientes y antioxidantes.</td>
+                  </tr>
+                  <tr data-nutriente="fibra vitaminas energia">
+                    <td>Chilacayote</td>
+                    <td>Fibra, vitaminas, energía moderada</td>
+                    <td>Ayuda a la digestión y aporta variedad a la alimentación.</td>
+                  </tr>
+                  <tr data-nutriente="proteinas minerales energia">
+                    <td>Tequesquite</td>
+                    <td>Minerales y uso culinario tradicional</td>
+                    <td>Se utiliza en cocina tradicional para mejorar textura y preparación.</td>
+                  </tr>
+                  <tr data-nutriente="proteinas minerales fibra">
+                    <td>Frijol</td>
+                    <td>Proteínas, fibra, minerales</td>
+                    <td>Complementa al maíz y mejora el aporte proteico diario.</td>
+                  </tr>
+                  <tr data-nutriente="minerales vitaminas fibra">
+                    <td>Calabaza</td>
+                    <td>Vitaminas, minerales, fibra</td>
+                    <td>Versátil, ligera y útil para una dieta equilibrada.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <aside class="card info-box">
+            <h3>Enfoque nutricional</h3>
+            <p>La cocina mixteca se basa en alimentos de la milpa como maíz, frijol y calabaza, acompañados de quelites y otros productos locales [web:1][web:12].</p>
+            <p>Una alimentación equilibrada debe incluir variedad de verduras, frutas, legumbres, granos y agua suficiente [web:14][web:17].</p>
+            <div class="tags">
+              <span>Tradición</span>
+              <span>Salud</span>
+              <span>Equilibrio</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="dietas" class="section alt">
+      <div class="container">
+        <div class="section-title">
+          <h2>Recomendaciones de Dietas</h2>
+          <p>Planes orientativos adaptados a distintos objetivos.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="diet-card">
+            <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=900&q=80" alt="Dieta para pérdida de peso">
+            <div class="card-body">
+              <h3>Dieta para pérdida de peso</h3>
+              <p>Menú orientado a reducir calorías sin perder nutrientes.</p>
+              <ul>
+                <li>Maíz en porciones moderadas.</li>
+                <li>Quelites, calabaza y verduras locales.</li>
+                <li>Proteínas magras y agua natural.</li>
+              </ul>
+              <p><strong>Beneficios:</strong> mayor saciedad y mejor control de porciones.</p>
+            </div>
+          </article>
+
+          <article class="diet-card">
+            <img src="https://images.unsplash.com/photo-1514995669114-6081e934b693?auto=format&fit=crop&w=900&q=80" alt="Dieta para deportistas">
+            <div class="card-body">
+              <h3>Dieta para deportistas</h3>
+              <p>Diseñada para apoyar energía, rendimiento y recuperación.</p>
+              <ul>
+                <li>Tortillas, frijol y fruta de temporada.</li>
+                <li>Proteínas suficientes.</li>
+                <li>Hidratación antes y después del ejercicio.</li>
+              </ul>
+              <p><strong>Beneficios:</strong> energía estable y mejor recuperación muscular.</p>
+            </div>
+          </article>
+
+          <article class="diet-card">
+            <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=900&q=80" alt="Dieta vegetariana mixteca">
+            <div class="card-body">
+              <h3>Dieta vegetariana mixteca</h3>
+              <p>Basada en alimentos vegetales de la milpa y productos locales.</p>
+              <ul>
+                <li>Frijoles, quelites, calabaza y maíz.</li>
+                <li>Semillas y frutas de temporada.</li>
+                <li>Preparaciones con poca grasa.</li>
+              </ul>
+              <p><strong>Beneficios:</strong> variedad vegetal, buena densidad nutricional y equilibrio.</p>
+            </div>
+          </article>
+
+          <article class="diet-card">
+            <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Dieta familiar saludable">
+            <div class="card-body">
+              <h3>Dieta familiar saludable</h3>
+              <p>Ideal para organizar comidas completas para el hogar.</p>
+              <ul>
+                <li>Desayuno con fruta, tortilla y proteína.</li>
+                <li>Comida con legumbres y vegetales.</li>
+                <li>Cena ligera y balanceada.</li>
+              </ul>
+              <p><strong>Beneficios:</strong> hábito sostenible, practicidad y mejor alimentación diaria.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section courses">
+      <div class="container">
+        <div class="section-title">
+          <h2>Cursos para Mejorar tu Dieta</h2>
+          <p>Opciones de formación para comer mejor y planear tu alimentación.</p>
+        </div>
+
+        <div class="cards-grid courses-grid">
+          <article class="course-card">
+            <img src="https://images.unsplash.com/photo-1556911073-a517e752729c?auto=format&fit=crop&w=900&q=80" alt="Curso nutrición con alimentos mixtecos">
+            <div class="card-body">
+              <h3>Nutrición con Alimentos Mixtecos</h3>
+              <p>Aprende a identificar ingredientes locales y combinarlos de forma saludable.</p>
+              <p><strong>Duración:</strong> 4 semanas</p>
+              <p><strong>Precio:</strong> $450 MXN</p>
+              <div class="course-icons">
+                <span>Video</span>
+                <span>Texto</span>
+                <span>Certificado</span>
+              </div>
+              <a href="#contacto" class="btn btn-dark">Inscríbete</a>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=900&q=80" alt="Curso dietas equilibradas">
+            <div class="card-body">
+              <h3>Dietas Equilibradas para Todos los Días</h3>
+              <p>Organiza menús sencillos, completos y adaptados a tu rutina.</p>
+              <p><strong>Duración:</strong> 3 semanas</p>
+              <p><strong>Precio:</strong> $380 MXN</p>
+              <div class="course-icons">
+                <span>Video</span>
+                <span>Texto</span>
+                <span>Certificado</span>
+              </div>
+              <a href="#contacto" class="btn btn-dark">Inscríbete</a>
+            </div>
+          </article>
+
+          <article class="course-card">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=900&q=80" alt="Curso cocina saludable mixteca">
+            <div class="card-body">
+              <h3>Cocina Saludable Mixteca</h3>
+              <p>Transforma recetas tradicionales en opciones nutritivas y balanceadas.</p>
+              <p><strong>Duración:</strong> 5 semanas</p>
+              <p><strong>Precio:</strong> $520 MXN</p>
+              <div class="course-icons">
+                <span>Video</span>
+                <span>Texto</span>
+                <span>Certificado</span>
+              </div>
+              <a href="#contacto" class="btn btn-dark">Inscríbete</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto" class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Contacto</h2>
+          <p>Escríbenos para recibir orientación o solicitar información.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="card form-card">
+            <h3>Formulario de contacto</h3>
+            <form id="contactForm">
+              <input type="text" id="nombre" placeholder="Nombre completo" required>
+              <input type="email" id="email" placeholder="Correo electrónico" required>
+              <textarea id="mensaje" rows="5" placeholder="Escribe tu mensaje" required></textarea>
+              <button type="submit" class="btn">Enviar mensaje</button>
+              <div id="mensajeExito" class="message"></div>
+            </form>
+          </div>
+
+          <div class="card map-card">
+            <h3>Información de contacto</h3>
+            <p><strong>Teléfono:</strong> +52 951 000 0000</p>
+            <p><strong>Email:</strong> contacto@dietasmixtecas.com</p>
+            <p><strong>Ubicación:</strong> Santiago Huajolotitlán, Oaxaca</p>
+
+            <div class="map-box">
+              <p>Mapa placeholder</p>
+              <p>Reemplaza este bloque por Google Maps o un iframe real.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Dietas Mixtecas</h3>
+        <p>Nutrición saludable con identidad, tradición y bienestar.</p>
+      </div>
+      <div>
+        <h4>Enlaces rápidos</h4>
+        <a href="#inicio">Inicio</a>
+        <a href="#nutricion">Información Nutricional</a>
+        <a href="#dietas">Recomendaciones de Dietas</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div>
+        <h4>Redes sociales</h4>
+        <div class="socials">
+          <span>Facebook</span>
+          <span>Instagram</span>
+          <span>WhatsApp</span>
+        </div>
+        <p>© 2026 Dietas Mixtecas</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
